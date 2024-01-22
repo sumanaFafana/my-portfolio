@@ -32,8 +32,14 @@
         <h1 class="pageHeading__title">Beni's Showcase</h1>
       </header>
       <main>
-        <article class="card flex flex--column">
-          <img class="card__image" src="" alt="A picture of Osman Yakub Beni" />
+        <article class="card flex flex--column profile">
+          <div class="card__image-container">
+            <img
+              class="card__image"
+              src="images/osman-pic.png"
+              alt="A picture of Osman Yakub Beni"
+            />
+          </div>
           <div class="card__content">
             <div class="flex flex--column card__details">
               <div class="card__identity">
@@ -54,51 +60,57 @@
               </div>
             </div>
             <p class="card__text">
-              Driven developer with a proactive approach to learning, committed
-              to mastering the art of creating exceptional UI applications.
+              Proactive and passionate, I craft exceptional UI, constantly
+              pushing boundaries to captivate users with every interaction.
+            </p>
+            <p class="card__text text-show-wide">
+              Learning fuels my dedication to user-centered design, delivering
+              UI that stands out and leaves a lasting impression
             </p>
           </div>
         </article>
-        <article class="card skills">
-          <h2 class="skills__title">front end</h2>
-          <div class="skills__container">
+        <div class="skill__container">
+          <article class="card skills">
+            <h2 class="skills__title">front end</h2>
+            <div class="skills__container">
+              <p class="flex skills__tool">
+                <span class="skills__name">Html</span>
+                <span class="skills__progress skills__progress--html"></span>
+              </p>
+              <p class="flex skills__tool">
+                <span class="skills__name">Css</span>
+                <span class="skills__progress skills__progress--css"></span>
+              </p>
+              <p class="flex skills__tool">
+                <span class="skills__name">JavaScript</span>
+                <span
+                  class="skills__progress skills__progress--javascript"
+                ></span>
+              </p>
+              <p class="flex skills__tool">
+                <span class="skills__name">TypeScript</span>
+                <span
+                  class="skills__progress skills__progress--typescript"
+                ></span>
+              </p>
+              <p class="flex skills__tool">
+                <span class="skills__name">Git</span>
+                <span class="skills__progress skills__progress--git"></span>
+              </p>
+              <p class="flex skills__tool">
+                <span class="skills__name">React</span>
+                <span class="skills__progress skills__progress--react"></span>
+              </p>
+            </div>
+          </article>
+          <article class="card skills">
+            <h2 class="skills__title">design</h2>
             <p class="flex skills__tool">
-              <span class="skills__name">Html</span>
-              <span class="skills__progress skills__progress--html"></span>
+              <span class="skills__name">Figma</span>
+              <span class="skills__progress skills__progress--figma"></span>
             </p>
-            <p class="flex skills__tool">
-              <span class="skills__name">Css</span>
-              <span class="skills__progress skills__progress--css"></span>
-            </p>
-            <p class="flex skills__tool">
-              <span class="skills__name">JavaScript</span>
-              <span
-                class="skills__progress skills__progress--javascript"
-              ></span>
-            </p>
-            <p class="flex skills__tool">
-              <span class="skills__name">TypeScript</span>
-              <span
-                class="skills__progress skills__progress--typescript"
-              ></span>
-            </p>
-            <p class="flex skills__tool">
-              <span class="skills__name">Git</span>
-              <span class="skills__progress skills__progress--git"></span>
-            </p>
-            <p class="flex skills__tool">
-              <span class="skills__name">React</span>
-              <span class="skills__progress skills__progress--react"></span>
-            </p>
-          </div>
-        </article>
-        <article class="card skills">
-          <h2 class="skills__title">design</h2>
-          <p class="flex skills__tool">
-            <span class="skills__name">Figma</span>
-            <span class="skills__progress skills__progress--figma"></span>
-          </p>
-        </article>
+          </article>
+        </div>
         <section class="projects">
           <h2 class="projects__title">Projects</h2>
           <div class="projects__container flex flex--column">
@@ -118,8 +130,10 @@
                 page. This page is similiar with a page. The design is from
                 devchallenge.io
               </p>
-              <a href="" class="link link--primary">demo</a>
-              <a href="" class="link link--secondary">code</a>
+              <div class="links-container">
+                <a href="" class="link link--primary">demo</a>
+                <a href="" class="link link--secondary">code</a>
+              </div>
             </article>
             <article class="project card">
               <img
@@ -137,8 +151,10 @@
                 page. This page is similiar with a page. The design is from
                 devchallenge.io
               </p>
-              <a href="" class="link link--primary">demo</a>
-              <a href="" class="link link--secondary">code</a>
+              <div class="links-container">
+                <a href="" class="link link--primary">demo</a>
+                <a href="" class="link link--secondary">code</a>
+              </div>
             </article>
             <article class="project card">
               <img
@@ -157,8 +173,10 @@
                 page. This page is similiar with a page. The design is from
                 devchallenge.io
               </p>
-              <a href="" class="link link--primary">demo</a>
-              <a href="" class="link link--secondary">code</a>
+              <div class="links-container">
+                <a href="" class="link link--primary">demo</a>
+                <a href="" class="link link--secondary">code</a>
+              </div>
             </article>
             <article class="project card">
               <img
@@ -176,8 +194,10 @@
                 page. This page is similiar with a page. The design is from
                 devchallenge.io
               </p>
-              <a href="" class="link link--primary">demo</a>
-              <a href="" class="link link--secondary">code</a>
+              <div class="links-container">
+                <a href="" class="link link--primary">demo</a>
+                <a href="" class="link link--secondary">code</a>
+              </div>
             </article>
           </div>
         </section>
@@ -228,7 +248,16 @@
           </div>
         </section>
       </main>
-      <footer></footer>
+      <footer class="footer">
+        <p class="author">
+          created by
+          <a
+            class="my-link"
+            href="https://legacy.devchallenges.io/portfolio/sumanaFafana"
+            >sumanaFofana</a
+          >
+        </p>
+      </footer>
     </div>
   </body>
 </html>
